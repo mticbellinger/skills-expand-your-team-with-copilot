@@ -568,6 +568,12 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         `
         }
+        <div class="share-buttons">
+          <span class="share-label">Share:</span>
+          <a class="share-btn share-email" href="mailto:?subject=${encodeURIComponent("Check out: " + name)}&body=${encodeURIComponent("I thought you might be interested in this activity at Mergington High School!\n\n" + name + "\n" + details.description + "\n\nSchedule: " + formattedSchedule)}" title="Share via Email" target="_blank" rel="noopener noreferrer">✉</a>
+          <a class="share-btn share-twitter" href="https://twitter.com/intent/tweet?text=${encodeURIComponent("Check out "" + name + "" at Mergington High School! " + details.description)}" title="Share on X (Twitter)" target="_blank" rel="noopener noreferrer">𝕏</a>
+          <a class="share-btn share-facebook" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}&quote=${encodeURIComponent("Check out "" + name + "" at Mergington High School!")}" title="Share on Facebook" target="_blank" rel="noopener noreferrer">f</a>
+        </div>
       </div>
     `;
 
